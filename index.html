@@ -5,54 +5,122 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vacunación COVID-19</title>
-
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/output.css">
 </head>
 <body class="font-sans">
 
-    <header class="grid grid-cols-2 grid-rows-1">
-        <div class="p-28 z-10">
-            <div id="triangulo-superior" class="bg-slate-100 w-28 h-28 absolute -top-12 rotate-45"></div>
-            <div id="triangulo-derecho" class="z-20 bg-slate-100 w-36 h-36 absolute right-1/2 top-1/3 rotate-45"></div>
-            <h1 class="text-6xl text-azul-oscuro font-bold tracking-wide mb-9">Fight Virus<br>With Vaccines</h1>
-            <h3 class="text-lg text-slate-500 tracking-wide mb-12">Let's stop this pandemic by killing the virus<br>with a vaccine, don't let yourself and your<br>family get infected</h3>
-
-            <div class="grid grid-cols-2 grid-rows-1">
-                <div>
-                    <i class="fa-solid fa-shield text-yellow-500 p-2 rounded bg-yellow-300/20 shadow-md shadow-yellow-300/40 text-sm"></i> <span class="ml-2 text-azul-oscuro text-sm font-medium">Best protection</span>
+    <header class="z-10">
+        <div class="grid grid-cols-2 grid-rows-1 h-screen">
+            <div class="z-10 p-28 mt-24">
+                <div id="triangulo-superior" class="bg-slate-100 w-32 h-32 absolute top-8 left-16 rotate-45"></div>
+                <div id="triangulo-derecho" class="z-20 bg-slate-100 w-36 h-36 absolute right-1/2 top-1/3 rotate-45"></div>
+                <h1 class="text-6xl text-azul-oscuro font-bold tracking-wide mb-9">Fight Virus<br>With Vaccines</h1>
+                <h3 class="text-lg text-slate-500 tracking-wide mb-12">Let's stop this pandemic by killing the virus<br>with a vaccine, don't let yourself and your<br>family get infected</h3>
+            
+                <div class="grid grid-cols-2 grid-rows-1">
+                    <div>
+                        <i class="fa-solid fa-shield text-yellow-500 p-2 rounded bg-yellow-300/20 shadow-md shadow-yellow-300/40 text-sm"></i> <span class="ml-2 text-azul-oscuro text-sm font-medium">Best protection</span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-star text-yellow-500 p-2 rounded bg-yellow-300/20 shadow-md shadow-yellow-300/40 text-sm"></i> <span class="ml-2 text-azul-oscuro text-sm font-medium">Selected Vaccines</span>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa-solid fa-star text-yellow-500 p-2 rounded bg-yellow-300/20 shadow-md shadow-yellow-300/40 text-sm"></i> <span class="ml-2 text-azul-oscuro text-sm font-medium">Selected Vaccines</span>
+            
+                <div class="mt-16">
+                    <i class="fa-solid fa-clock text-indigo-600 p-2 rounded bg-indigo-300/20 shadow-md shadow-indigo-300/40"></i> <span class="ml-2 text-azul-oscuro font-semibold">Schedule your vaccinations</span>
+                </div>
+            </div> <!-- Izquierdo -->
+            
+            <div class="z-20 bg-gradient-to-tl from-blue-700 to-blue-400 flex justify-start items-end">
+                <img class="w-full" src="img/banner-inyeccion.png" alt="Banner inyección">
+            </div> <!-- Derecho -->
+        </div> <!-- grid -->
+
+        <div class="absolute bottom-12 z-40 bg-white/95 shadow-2xl shadow-indigo-300/40 w-7/12/ px-11 py-6 mx-28 rounded">
+            <div class="grid grid-cols-4 grid-rows-2">
+                <div id="location" class="mx-3">
+                    <i class="fa-solid fa-location-dot text-indigo-600 p-2 rounded bg-indigo-300/20"></i> <span class="ml-2 text-gray-500">Location</span>
+                </div>
+                <div id="date" class="mx-3">
+                    <i class="fa-solid fa-calendar-days text-indigo-600 p-2 rounded bg-indigo-300/20"></i> <span class="ml-2 text-gray-500">Date</span>
+                </div>
+                <div id="type" class="mx-3">
+                    <i class="fa-solid fa-syringe text-indigo-600 p-2 rounded bg-indigo-300/20"></i> <span class="ml-2 text-gray-500">Vaccine Type</span>
+                </div>
+
+                <div id="boton" class="row-span-2 flex justify-center items-center">
+                    <button class="px-8 py-3 rounded bg-gradient-to-l from-indigo-600 to-indigo-500 text-white font-medium shadow-lg shadow-indigo-600/30">Submit</button>
+                </div>
+
+                <div id="location-value" class="mx-3">
+                    <span class="pl-10 text-azul-oscuro font-semibold">Jakarta Utara </span>
+                </div>
+                <div id="date-value" class="mx-3">
+                    <span class="pl-11 text-azul-oscuro font-semibold">14 March 2022</span>
+                </div>
+                <div id="type-value" class="mx-3">
+                    <span class="pl-11 text-azul-oscuro font-semibold">Moderna</span>
                 </div>
             </div>
-
-            <div class="mt-24">
-                <i class="fa-solid fa-clock text-indigo-600 p-2 rounded bg-indigo-300/20 shadow-md shadow-indigo-300/40"></i> <span class="ml-2 text-azul-oscuro font-semibold">Schedule your vaccinations</span>
-            </div>
-        </div> <!-- Izquierdo -->
-
-        <div class="z-30 bg-gradient-to-tl from-blue-700 to-blue-400 flex justify-start items-end">
-            <img class="w-full" src="img/banner-inyeccion.png" alt="Banner inyección">
-        </div> <!-- Derecho -->
-
-        <div>
-
-        </div> <!-- Banner flotante -->
+        </div> <!-- Formulario flotante -->
     </header>
 
-    <nav>
-        <span class="text-indigo-600">Vaccination</span>
-
-        <span>Database</span>
-        <span>Education</span>
-        <span>News</span>
-        <span>Regulation</span>
-
-        <button>Hoax Buster</button>
+    <nav class="absolute top-0 w-full z-20 bg-white/90 shadow-inner shadow-gray-400">
+            <div class="h-24 px-28 flex justify-between items-center">
+                <span class="grow text-2xl text-indigo-600 font-semibold">Vaccination</span>
+                
+                <span class="mx-10 text-gray-500 font-medium">Database</span>
+                <span class="mx-10 text-gray-500 font-medium">Education</span>
+                <span class="mx-10 text-gray-500 font-medium">News</span>
+                <span class="mx-10 text-gray-500 font-medium">Regulation</span>
+                
+                <button class="mx-10 px-7 py-3 rounded bg-gradient-to-l from-indigo-600 to-indigo-500 text-white font-medium shadow-lg shadow-indigo-600/30">Hoax Buster</button>
+            </div>
     </nav>
 
 
-    <main></main>
+    <main class="px-28">
+        <div id="marcas-vacunas" class="my-24">
+            <img src="img/marcas-vacunas.png" alt="Marcas de vacunas disponibles">
+        </div> <!-- marcas-vacunas -->
+
+        <div id="why-should-i-vaccine" class="relative mb-40">
+            <div id="triangulo-why-should-i-vaccine" class=" bg-slate-100 w-36 h-36 absolute -top-12 -right-48 rotate-45"></div>
+            <div id="linea-why-should-i-vaccine" class=" bg-slate-50 w-3/5 h-1 absolute -right-36 top-6"></div>
+
+            <h2 class="text-4xl text-azul-oscuro font-bold tracking-wide mb-9">Why should I vaccine?</h2>
+            <p class="text-slate-500 tracking-wide mb-12">In order to avoid any doubts about getting the COVID-19<br>vaccine, identify the following 4 benefits of COVID-19<br>vaccination:</p>
+
+            <div class="grid grid-cols-4 grid-rows-1 gap-10">
+                <div class="card border-2 border-slate-200/30 rounded-lg pl-7 pt-7 pr-7 pb-16 shadow-2xl shadow-indigo-600/20">
+                    <div class="mb-5"><i class="fa-solid fa-sliders text-xl text-indigo-600 p-3 rounded bg-indigo-300/20 shadow-md shadow-indigo-300/40"></i></div>
+                    <h3 class="text-xl text-azul-oscuro mb-5 leading-6">Minimize the<br>spread of viruses</h3>
+                    <p class="text-sm text-slate-500">Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
+                </div> <!-- card -->
+
+                <div class="card border-2 border-slate-200/30 rounded-lg pl-7 pt-7 pr-7 pb-16 shadow-2xl shadow-indigo-600/20">
+                    <div class="mb-5"><i class="fa-solid fa-shield-virus text-xl text-indigo-600 p-3 rounded bg-indigo-300/20 shadow-md shadow-indigo-300/40"></i></div>
+                    <h3 class="text-xl text-azul-oscuro mb-5 leading-6">Forming<br>antibodies</h3>
+                    <p class="text-sm text-slate-500">Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
+                </div> <!-- card -->
+
+                <div class="card border-2 border-slate-200/30 rounded-lg pl-7 pt-7 pr-7 pb-16 shadow-2xl shadow-indigo-600/20">
+                    <div class="mb-5"><i class="fa-solid fa-users text-xl text-indigo-600 p-3 rounded bg-indigo-300/20 shadow-md shadow-indigo-300/40"></i></div>
+                    <h3 class="text-xl text-azul-oscuro mb-5 leading-6">Protecting<br>people nearby</h3>
+                    <p class="text-sm text-slate-500">Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
+                </div> <!-- card -->
+
+                <div class="card border-2 border-slate-200/30 rounded-lg pl-7 pt-7 pr-7 pb-16 shadow-2xl shadow-indigo-600/20">
+                    <div class="mb-5"><i class="fa-solid fa-chart-line text-xl text-indigo-600 p-3 rounded bg-indigo-300/20 shadow-md shadow-indigo-300/40"></i></div>
+                    <h3 class="text-xl text-azul-oscuro mb-5 leading-6">Creting group<br>immunity</h3>
+                    <p class="text-sm text-slate-500">Vaccine has been proven effective to prevent someone from getting infected with Coronavirus</p>
+                </div> <!-- card -->
+
+            </div> <!-- grid -->
+        </div> <!-- why-should-i-vaccine -->
+
+    </main>
 
 
     <footer></footer>
